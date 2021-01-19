@@ -1,0 +1,25 @@
+.details{
+    margin-top: 14px;
+}
+.details h5{
+    display: inline;
+    margin-right: 30px;
+    
+}
+.users{
+    width: 550px;
+    height: 594px;
+    
+
+    background: #FFFFFF;
+    box-shadow: 0px 20px 40px rgba(238, 77, 71, 0.1);
+    border: 1px solid;
+    border-radius: 10px;
+}
+.buttons{
+    float: right;
+}
+button{
+    width: 36px;
+}
+
