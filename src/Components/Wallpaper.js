@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import img from '../Images/Scene.png';
+import './wallPaper.css';
 
 class Wallpaper extends Component{
     
@@ -7,7 +8,7 @@ class Wallpaper extends Component{
     render(){
         return (
             <div>
-                <img src={img} alt="scene" style={{width: 1285, height: 800}}/>
+                <img src={img} alt="scene" className="wallpaper"/>
             </div>
         );
     }

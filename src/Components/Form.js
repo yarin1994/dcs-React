@@ -11,13 +11,13 @@ class Form extends Component {
     render() {
 
         return (
-            <div>
+            <div className="form">
                 <form>
                     <textarea/>
                     <textarea/>
                     <textarea/>
                 </form>
-                <Button style={{left:"57px"}} variant="contained" color="secondary">save</Button>
+                <Button className="button" variant="contained" color="secondary">save</Button>
             </div>
         )
     }

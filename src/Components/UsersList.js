@@ -67,10 +67,10 @@ class UsersList extends Component {
                 <h5>{item.name}</h5>
                 <h5>{item.city}</h5>
                 <span className="buttons">
-                    <Fab size="small" color="secondary" aria-label="update" onClick={this.update} variant="round">
+                    <Fab className="right" size="small" color="secondary" aria-label="update" onClick={this.update} variant="round" >
                         <EditIcon />
                     </Fab>
-                    <Fab size="small" color="secondary" aria-label="delete" onClick={this.delete} variant="round">
+                    <Fab className="right" size="small" color="secondary" aria-label="delete" onClick={this.delete} variant="round">
                         <DeleteIcon />
                     </Fab>
                 </span>
@@ -82,7 +82,7 @@ class UsersList extends Component {
 
     render() {
         return (
-            <div className="users">
+            <div className="rectangle">
                 {this.state.users.map(this.eachUser)}
                 {/* <Fab size="large" color="secondary" aria-label="add" onClick={this.add} variant="extended">
                     <AddIcon/>Save

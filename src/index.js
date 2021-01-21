@@ -12,11 +12,11 @@ import Truck from './Components/Truck';
 
 ReactDOM.render(
 <React.StrictMode>
-  {/* <Wallpaper/> */}
-  {/* <Truck/> */}
-  {/* <Form/> */}
+  <Wallpaper/>
+  <Truck/>
   <UsersList/>
-  {/* <User/> */}
+  <Form/>
+  <User/>
   {/* <ReactRouter/> */}
 </React.StrictMode>,document.getElementById('root')
 );
