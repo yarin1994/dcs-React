@@ -11,6 +11,9 @@ import { v4 as uuid } from 'uuid';
 // export const context = createContext();
 
 const Wallpaper = () => {
+    const btnInfo = "Update";
+
+    const [btn, setBtn] = useState(btnInfo);
     const [users, setUsers] = useState(usersData);
     const [userInf, setUser] = useState('');
 
@@ -20,13 +23,10 @@ const Wallpaper = () => {
     }
 
     const editUser = (userInf) => {
-        const state = {
-            saveMode: true,
-            save: "Save",
-            edit: "Update"
-        }
         // setUser([...users, {id: userInf.id, date, userName, city}]);
-        setUser({ id: userInf.id, date: userInf.date, userName: userInf.userName, city: userInf.city });
+        setUser({ id: userInf.id, date: userInf.date, userName: userInf.userName, city: userInf.city});   
+        setBtn({state: btn[1]});     
+        // setBtn(btnState = "Update");
         // insertUser(item.date, item.userName, item.city);
         // console.log(userInf);
     }
