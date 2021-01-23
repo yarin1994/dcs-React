@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './userList.css'
 // import data from '../Data/users.json';
-import { Container, Fab } from '@material-ui/core';
+import { Fab } from '@material-ui/core';
 import EditIcon from '@material-ui/icons/Edit';
 import DeleteIcon from '@material-ui/icons/Delete';
 

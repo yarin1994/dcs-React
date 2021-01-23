@@ -4,21 +4,21 @@ import React, { useState } from 'react';
 // import { context } from './Wallpaper';
 import './form.css';
 import Button from "@material-ui/core/Button";
-import User from './User';
-import UsersList from './UsersList';
+// import User from './User';
+// import UsersList from './UsersList';
 // import Container from '@material-ui/core/Container';
 
 
-const Form = ({newUser}) => {
+const Form = ({insertUser, users}) => {
     // const {newUser} = useContext(context);
     const [date, setDate] = useState('');
-    const [name, setName] = useState('');
+    const [userName, setName] = useState('');
     const [city, setCity] = useState('');
 
     const handleSubmit = (e) => {
-        e.preventDefault();
-        // console.log(date, name, city);
-        newUser(date, name, city);
+        // e.preventDefault();
+        // console.log(date, userName, city);
+        insertUser(date, userName, city);
         setDate('');
         setName('');
         setCity('');
@@ -26,13 +26,13 @@ const Form = ({newUser}) => {
 
     return (
         <div className="form">
-            <form onSubmit={handleSubmit}>
+            <form>
                 {/* <textarea/> */}
                 {/* <textarea/>
                 <textarea/> */}
-                <input type="text" value={date} defaultValue={User.date?UsersList.date:date} onChange={(e) => setDate(e.target.value)} required />
-                <input type="text" value={name} efaultValue={User.name?UsersList.name:name} onChange={(e) => setName(e.target.value)} required />
-                <input type="text" value={city} efaultValue={User.city?UsersList.city:city} onChange={(e) => setCity(e.target.value)} required />
+                <input type="text"  onChange={(e) => setDate(e.target.value)} required />
+                <input type="text"  onChange={(e) => setName(e.target.value)} required />
+                <input type="text"  onChange={(e) => setCity(e.target.value)} required />
             </form>
             <Button onClick={handleSubmit} className="button" variant="contained" color="secondary">save</Button>
         </div>
