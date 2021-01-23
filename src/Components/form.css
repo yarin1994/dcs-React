@@ -4,6 +4,7 @@
 } */
 
 .form{
+    /* font-family: Rubik; */
     position: absolute;
     width: 400px;
     height: 284px;
@@ -26,7 +27,7 @@
     border-radius: 5px;
 }
 
-textarea{
+input{
     /* position: absolute; */
     width: 400px;
     height: 60px;

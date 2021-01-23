@@ -1,18 +1,18 @@
 [
     {
-        "id": 3,
+        "id": 1,
         "date": "14.08.1994",
         "name": "yarin",
         "city": "Tel-Aviv"
     },
     {
-        "id": 4,
+        "id": 2,
         "date": "16.09.1994",
         "name": "yarin",
         "city": "Haifa"
     },
     {
-        "id": 7,
+        "id": 3,
         "date": "24.04.1994",
         "name": "yarin",
         "city": "Jerusalem"

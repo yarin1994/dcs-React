@@ -1,10 +1,8 @@
 import React, { Component } from 'react';
-import User from './User';
-import usersData from './../Data/users.json';
-import { Container, Fab } from '@material-ui/core';
-import EditIcon from '@material-ui/icons/Edit';
-import DeleteIcon from '@material-ui/icons/Delete';
+
+
 import './userList.css';
+
 class UsersList extends Component {
     constructor(props) {
         super(props);

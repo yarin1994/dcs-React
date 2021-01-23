@@ -28,20 +28,10 @@
     margin-right: 12px;
 }
 
-.rectangle{
-    position: absolute;
-    width: 550px;
-    height: 515px;
-    left: 506px;
-    top: 113px;
 
-    background: #FFFFFF;
-    box-shadow: 0px 20px 40px rgba(238, 77, 71, 0.1);
-    border-radius: 10px;
-}
 
 h5{
-    font-family: Rubik;
+font-family: Rubik;
 font-style: normal;
 font-weight: 300;
 font-size: 18px;

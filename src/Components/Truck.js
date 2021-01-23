@@ -1,16 +1,21 @@
-import React, {Component} from 'react';
+import React from 'react';
 import img from '../Images/mobel.png';
 import './truck.css';
 
-class Truck extends Component{
+
+const Truck = () => {
+    return (
+        <div>
+            <img src={img} alt="mobel" className="truck"/>
+        </div>
+    );
+}
+
+// class Truck extends Component{
     
 
-    render(){
-        return (
-            <div>
-                <img src={img} alt="mobel" className="truck"/>
-            </div>
-        );
-    }
-}
+//     render(){
+        
+//     }
+// }
 export default Truck;
