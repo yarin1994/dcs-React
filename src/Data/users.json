@@ -2,19 +2,19 @@
     {
         "id": 1,
         "date": "14.08.1994",
-        "name": "yarin",
+        "userName": "yarin",
         "city": "Tel-Aviv"
     },
     {
         "id": 2,
         "date": "16.09.1994",
-        "name": "yarin",
+        "userName": "yarin",
         "city": "Haifa"
     },
     {
         "id": 3,
         "date": "24.04.1994",
-        "name": "yarin",
+        "userName": "yarin",
         "city": "Jerusalem"
     }
 ]

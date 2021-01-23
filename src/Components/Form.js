@@ -1,40 +1,67 @@
-
-import React, { useState } from 'react';
-// import { NavLink } from 'react-router-dom'; //might not be needed beacause we have only one page
-// import { context } from './Wallpaper';
+import React, { useEffect, useState } from 'react';
 import './form.css';
 import Button from "@material-ui/core/Button";
-// import User from './User';
-// import UsersList from './UsersList';
-// import Container from '@material-ui/core/Container';
 
+const Form = ({ insertUser, detailsUpdate, userInf }) => {
+    const state = {
+        saveMode: true,
+        save: "Save",
+        edit: "Update"
 
-const Form = ({insertUser, users}) => {
-    // const {newUser} = useContext(context);
+    }
+    
+    const [id, setId] = useState('')
     const [date, setDate] = useState('');
     const [userName, setName] = useState('');
     const [city, setCity] = useState('');
 
-    const handleSubmit = (e) => {
-        // e.preventDefault();
-        // console.log(date, userName, city);
-        insertUser(date, userName, city);
-        setDate('');
-        setName('');
-        setCity('');
+    useEffect(() => {
+        document.id = '';
+        document.date = '';
+        document.userName = '';
+        document.city = '';
+
+    })
+
+    const btnSubmit = (e) => {
+
+        if (userInf !== '') {
+            console.log('edit');
+            // console.log(userInf.id, userInf.date, userInf.userName, userInf.city);
+            // console.log(e);
+            if(date !== ''){
+                userInf.date = date;
+            }
+            if(userName !== ''){
+                userInf.userName = userName;
+            }
+            if(city !== ''){
+                userInf.city = city;
+            }
+            // console.log(userInf.id, userInf.date, userInf.userName, userInf.city);
+            detailsUpdate(userInf, userInf.id);
+            setId('');
+            
+           
+        } else{
+            console.log('create');
+            e.preventDefault();
+            insertUser(date, userName, city);
+            userInf ='';
+
+        }
     }
 
     return (
         <div className="form">
             <form>
-                {/* <textarea/> */}
-                {/* <textarea/>
-                <textarea/> */}
-                <input type="text"  onChange={(e) => setDate(e.target.value)} required />
-                <input type="text"  onChange={(e) => setName(e.target.value)} required />
-                <input type="text"  onChange={(e) => setCity(e.target.value)} required />
+                <input name="date" type="text" defaultValue={userInf ? userInf.date : date} onChange={(e) => setDate(e.target.value)}  />
+                <input name="name" type="text" defaultValue={userInf ? userInf.userName : userName} onChange={(e) => setName(e.target.value)}  />
+                <input name="city" type="text" defaultValue={userInf ? userInf.city : city} onChange={(e) => setCity(e.target.value)}  />
             </form>
-            <Button onClick={handleSubmit} className="button" variant="contained" color="secondary">save</Button>
+            <Button onClick={btnSubmit} className="button" variant="contained" color="secondary">
+                <p value={{state}}/>
+            </Button>
         </div>
     )
 }
