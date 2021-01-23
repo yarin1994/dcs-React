@@ -1,19 +1,12 @@
 import React from 'react';
 import './userList.css'
-// import data from '../Data/users.json';
 import { Fab } from '@material-ui/core';
 import EditIcon from '@material-ui/icons/Edit';
 import DeleteIcon from '@material-ui/icons/Delete';
 
-
-
-
-
-
 const HooksUserList = ({ data, editUser, removeUser }) => {
     
     return (
-
         data.map((item, i) => { 
             return (
                 <div className="details" key={item.id}>

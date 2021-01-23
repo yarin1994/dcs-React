@@ -1,15 +1,12 @@
 import React, { useState } from 'react';
 import img from '../Images/Scene.png';
 import './wallPaper.css';
-
 import Form from './Form';
 import HooksUserList from './HooksUserList';
-
 import usersData from './../Data/users.json';
 import { v4 as uuid } from 'uuid';
 
 const Wallpaper = () => {
-
     const [users, setUsers] = useState(usersData);
     const [userInf, setUser] = useState('');
 
@@ -20,11 +17,7 @@ const Wallpaper = () => {
     }
 
     const editUser = (userInf) => {
-        // setUser([...users, {id: userInf.id, date, userName, city}]);
         setUser({ id: userInf.id, date: userInf.date, userName: userInf.userName, city: userInf.city});   
-        // setBtn(btnState = "Update");
-        // insertUser(item.date, item.userName, item.city);
-        // console.log(userInf);
     }
 
     const removeUser = (id) => {
@@ -32,10 +25,7 @@ const Wallpaper = () => {
     }
 
     const detailsUpdate = (userDetails, id) => {
-        console.log(userDetails);
-        // setUser( {id: userId, date: date, userName: name, city: city});
         setUsers(users.map(p => p.id !== id ? p : userDetails));
-        // console.log("hello");/
     }
 
     return (
