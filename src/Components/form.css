@@ -1,30 +1,20 @@
-/* textarea{
-    display: block;
-    margin-bottom: 14px;
-} */
-
 .form{
-    /* font-family: Rubik; */
     position: absolute;
     width: 400px;
     height: 284px;
-    left: 1094px;
-    top: 113px;
+    left: 68%;
+    top: 14.2%;
 
 }
 
 .button{
     width: 158px;
     height: 60px;
-    range: 5px;
-    position: absolute;
     left: 115px;
     right: 0%;
     top: 0%;
     bottom: 0%;
-    margin-top: 2px;
     background: #EE4D47;
-    border-radius: 5px;
 }
 
 input{
@@ -43,7 +33,7 @@ input{
     font-size: 18px;
     line-height: 40px;
     
-    
+
     background: #FFFFFF;
     border: 2px solid #EE4D47;
     box-sizing: border-box;

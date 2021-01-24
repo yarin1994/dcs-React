@@ -5,10 +5,11 @@ import reportWebVitals from './reportWebVitals';
 import Wallpaper from './Components/Wallpaper';
 import Truck from './Components/Truck';
 
+
 ReactDOM.render(
   <React.StrictMode>
-    <Wallpaper />
-    <Truck />
+      <Wallpaper />
+      <Truck />
   </React.StrictMode>, document.getElementById('root')
 );
 

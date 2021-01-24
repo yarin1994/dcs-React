@@ -13,11 +13,11 @@ const Wallpaper = () => {
 
     const insertUser = (date, userName, city) => {
         setUsers([...users, { id: uuid(), date, userName, city }]);
-        
+
     }
 
     const editUser = (userInf) => {
-        setUser({ id: userInf.id, date: userInf.date, userName: userInf.userName, city: userInf.city});   
+        setUser({ id: userInf.id, date: userInf.date, userName: userInf.userName, city: userInf.city });
     }
 
     const removeUser = (id) => {
