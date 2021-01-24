@@ -26,6 +26,7 @@ const Wallpaper = () => {
 
     const detailsUpdate = (userDetails, id) => {
         setUsers(users.map(p => p.id !== id ? p : userDetails));
+        setUser('');
     }
 
     return (

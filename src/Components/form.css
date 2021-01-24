@@ -28,14 +28,22 @@
 }
 
 input{
-    /* position: absolute; */
+
+    /* Input Size */
     width: 400px;
     height: 60px;
     margin-bottom: 14px;
-    /* left: 1094px; */
-    /* top: 113px; */
     
 
+
+    /* Font Style */
+    font-family: Rubik;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 40px;
+    
+    
     background: #FFFFFF;
     border: 2px solid #EE4D47;
     box-sizing: border-box;

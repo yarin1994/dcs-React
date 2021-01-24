@@ -42,7 +42,7 @@ const Form = ({ insertUser, detailsUpdate, userInf, setUser}) => {
             // e.preventDefault();
             insertUser(date, userName, city);
         }
-        setUser({id:"", date:"", userName:"", city:""});
+        // setUser({id:"", date:"", userName:"", city:""});
     }
 
     return (
